@@ -41,11 +41,11 @@ BROKERS = {
 
     # ── Eightcap (your current broker) ───────────────────────────────────────
     "Eightcap": {
-        "GOLD":   {"pip_usd": 0.10, "spread": 6.0,   "pip_size": 0.01},
-        "SILVER": {"pip_usd": 0.50, "spread": 10.0,  "pip_size": 0.001},
-        "EURUSD": {"pip_usd": 0.10, "spread": 1.0,   "pip_size": 0.0001},
-        "GBPUSD": {"pip_usd": 0.10, "spread": 1.1,   "pip_size": 0.0001},
-        "USDJPY": {"pip_usd": 0.06, "spread": 1.1,   "pip_size": 0.01},
+        "GOLD":   {"pip_usd": 1.00, "spread": 6.0,   "pip_size": 0.01},
+        "SILVER": {"pip_usd": 5.00, "spread": 10.0,  "pip_size": 0.001},
+        "EURUSD": {"pip_usd": 10.0, "spread": 1.0,   "pip_size": 0.0001},
+        "GBPUSD": {"pip_usd": 10.0, "spread": 1.1,   "pip_size": 0.0001},
+        "USDJPY": {"pip_usd": 6.26, "spread": 1.1,   "pip_size": 0.01},
         "BTCUSD": {"pip_usd": 0.10, "spread": 297.6, "pip_size": 0.1},
         "ETHUSD": {"pip_usd": 0.10, "spread": 49.8,  "pip_size": 0.1},
         "US30":   {"pip_usd": 1.00, "spread": 3.90,  "pip_size": 1.0},
@@ -53,8 +53,8 @@ BROKERS = {
         "US500":  {"pip_usd": 1.00, "spread": 0.55,  "pip_size": 1.0},
         "UK100":  {"pip_usd": 1.00, "spread": 1.60,  "pip_size": 1.0},
         "GER40":  {"pip_usd": 1.00, "spread": 1.95,  "pip_size": 1.0},
-        "AUS200": {"pip_usd": 1.00, "spread": 5.54,  "pip_size": 1.0},
-        "JP225":  {"pip_usd": 1.00, "spread": 8.00,  "pip_size": 1.0},
+        "AUS200": {"pip_usd": 0.66, "spread": 5.54,  "pip_size": 1.0},
+        "JP225":  {"pip_usd": 0.0062, "spread": 8.00,  "pip_size": 1.0},
     },
 
     # ── ICMarkets (Raw/ECN account) ───────────────────────────────────────────
