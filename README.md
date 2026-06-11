@@ -1,6 +1,6 @@
 # swing - Version 2
 
-# Gideon Z+ Advanced Trading Bot (V2)
+# Swing Z+ Advanced Trading Bot (V2)
 
 An autonomous "always-in" trading agent powered by Reinforcement Learning (PPO) and supervised Machine Learning (XGBoost + LSTM). Version 2 introduces massive architectural upgrades including **Model Ensembling**, **Adaptive Position Sizing**, and **Live Multi-Broker Support**.
 
