@@ -1,0 +1,33 @@
+{
+  "JP225": {
+    "total_pnl_usd": 392.38225,
+    "total_return": 0.03923822500000351,
+    "final_balance": 10392.382250000035,
+    "sharpe": 9.648857662402726,
+    "sortino": 26.86695219507201,
+    "calmar": 49.08849433809228,
+    "max_drawdown": 0.0007993363948159544,
+    "max_drawdown_usd": 8.186750000000757,
+    "win_rate": 0.5830285296269203,
+    "profit_factor": 1.8481538202148478,
+    "n_flips": 1510,
+    "long_pct": 0.5495610826627652,
+    "short_pct": 0.45043891733723485,
+    "avg_lots": 0.5,
+    "avg_win_usd": 0.2681973808030113,
+    "avg_loss_usd": -0.2107658314350797,
+    "expectancy_usd": 0.06848338594148105,
+    "max_win_streak": 18,
+    "max_loss_streak": 8,
+    "n_trades": 1511,
+    "trade_win_rate": 0.6207809397749835,
+    "trade_sharpe": 13.293354837665834,
+    "trade_expectancy": 0.25908145529276533,
+    "trade_avg_win": 0.6026809701492537,
+    "trade_avg_loss": -0.303390350877193,
+    "symbol": "JP225",
+    "date_from": "2024-01-01",
+    "date_to": "2024-12-31",
+    "n_bars": 5468
+  }
+}
