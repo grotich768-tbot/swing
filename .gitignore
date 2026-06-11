@@ -19,11 +19,8 @@ __pycache__/
 .coverage
 htmlcov/
 
-# Models and Data
-models/saved/
 data/
 scratch/
-*.zip
 
 # IDEs
 .idea/
