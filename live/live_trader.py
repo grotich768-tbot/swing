@@ -609,7 +609,8 @@ class LiveTrader:
 
             pip      = PIP_VALUE[symbol]
             pip_usd  = PIP_USD_PER_LOT[symbol]
-            risk     = self.s.initial_balance * self.s.risk_pct
+            balance  = self.bridge.account_balance()
+            risk     = balance * self.s.risk_pct
             atr_pips = atr * self.s.atr_stop_mult / pip
             lots     = risk / (atr_pips * pip_usd + 1e-10)
             lots     = self.bridge.normalise_lots(symbol, lots)
