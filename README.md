@@ -1,6 +1,6 @@
 # swing
 
-# Gideon Z+ Always-In Trading Bot
+# Swing Z+ Always-In Trading Bot
 
 An autonomous "always-in" trading agent powered by Reinforcement Learning (PPO) and supervised Machine Learning (XGBoost + LSTM) designed to trade **Stock Indices** and **Gold** via MetaTrader 5.
 
