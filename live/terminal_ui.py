@@ -53,7 +53,7 @@ class TerminalUI(App):
     """Interactive Textual dashboard."""
 
     CSS = CSS
-    TITLE = "SWING Z+ Live Trader"
+    TITLE = "Swing Bot Live Trader"
     BINDINGS = [("q", "quit", "Quit")]
 
     def __init__(self, settings, **kwargs):
