@@ -2,15 +2,15 @@
 .env
 kaggle.json
 
-# Massive Data Folder
-data/
-
 # Temporary / Scratch Files
 test_profit.py
 test_ticks.py
 symbols.txt
+scratch/
 
 # Python Caches
 __pycache__/
 *.pyc
 .pytest_cache/
+.venv/
+venv/
