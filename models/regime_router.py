@@ -185,18 +185,20 @@ class RegimeRouter:
                 # Specialist says FLIP but ensemble strongly disagrees → HOLD
                 action = 0
                 result["source"] = "ensemble_override"
-                logger.debug(
-                    f"[{self.symbol}] Override: specialist FLIP blocked by "
-                    f"ensemble ({hold_votes}/5 hold)"
-                )
+                # logger.debug(
+                #     f"[{self.symbol}] Override: specialist FLIP blocked by "
+                #     f"ensemble ({hold_votes}/5 hold)"
+                # )
+
             elif specialist_action == 0 and strong_flip:
                 # Specialist says HOLD but ensemble strongly says FLIP → FLIP
                 action = 1
                 result["source"] = "ensemble_override"
-                logger.debug(
-                    f"[{self.symbol}] Override: specialist HOLD overridden by "
-                    f"ensemble ({flip_votes}/5 flip)"
-                )
+                # logger.debug(
+                #     f"[{self.symbol}] Override: specialist HOLD overridden by "
+                #     f"ensemble ({flip_votes}/5 flip)"
+                # )
+
             else:
                 # Normal case: trust specialist
                 action = specialist_action

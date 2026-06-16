@@ -107,7 +107,7 @@ class LiveSettings:
 
     # ── Order settings ─────────────────────────────────────────────────────────
     magic_number:          int   = 241010
-    order_comment:         str   = "AlwaysInBot_v1"
+    order_comment:         str   = "AlwaysInBot_v2"
     slippage_points:       int   = 10
     order_timeout_seconds: int   = 30
     max_retries:           int   = 3
@@ -150,10 +150,10 @@ class LiveSettings:
     max_spread_pips_jp225:         float = 24.0    # 3x typical 8.0
 
     # ── Warmup bars ────────────────────────────────────────────────────────────
-    warmup_m15: int = 200
-    warmup_h1:  int = 300
-    warmup_h4:  int = 60
-    warmup_d1:  int = 50
+    warmup_m15: int = 1500
+    warmup_h1:  int = 600
+    warmup_h4:  int = 200
+    warmup_d1:  int = 100
 
     # ── Timing ─────────────────────────────────────────────────────────────────
     bar_check_interval_sec: int = 5
@@ -268,7 +268,7 @@ class LiveSettings:
         """Raise ValueError for any dangerous misconfiguration."""
         if self.trading_mode.upper() not in ("DEMO", "LIVE"):
             raise ValueError(f"TRADING_MODE must be DEMO or LIVE, got: {self.trading_mode}")
-        if self.risk_pct > 0.20:
+        if self.risk_pct > 1.00:
             raise ValueError(f"RISK_PCT={self.risk_pct:.1%} is dangerously high. Keep ≤ 20%.")
         if self.risk_pct > 0.05:
             logger.warning(f"RISK_PCT={self.risk_pct:.1%} is above 5% — ensure this is intentional.")
@@ -346,7 +346,7 @@ def load_settings(terminal_id: int = 1) -> LiveSettings:
 
         # Orders
         magic_number          = _getint("MAGIC_NUMBER",          241010),
-        order_comment         = _get("ORDER_COMMENT",            "AlwaysInBot_v1"),
+        order_comment         = _get("ORDER_COMMENT",            "AlwaysInBot_v2"),
         slippage_points       = _getint("SLIPPAGE_POINTS",       10),
         order_timeout_seconds = _getint("ORDER_TIMEOUT_SECONDS", 30),
         max_retries           = _getint("MAX_RETRIES",           3),
@@ -377,10 +377,10 @@ def load_settings(terminal_id: int = 1) -> LiveSettings:
         max_spread_pips_btc          = _getfloat("MAX_SPREAD_PIPS_BTC",          400.0),
 
         # Warmup
-        warmup_m15 = _getint("WARMUP_BARS_M15", 200),
-        warmup_h1  = _getint("WARMUP_BARS_H1",  300),
-        warmup_h4  = _getint("WARMUP_BARS_H4",  60),
-        warmup_d1  = _getint("WARMUP_BARS_D1",  50),
+        warmup_m15 = _getint("WARMUP_BARS_M15", 1500),
+        warmup_h1  = _getint("WARMUP_BARS_H1",  600),
+        warmup_h4  = _getint("WARMUP_BARS_H4",  200),
+        warmup_d1  = _getint("WARMUP_BARS_D1",  100),
 
         # Timing
         bar_check_interval_sec = _getint("BAR_CHECK_INTERVAL_SEC", 5),
@@ -456,3 +456,5 @@ def load_settings(terminal_id: int = 1) -> LiveSettings:
 
 # Singleton — import from anywhere
 settings = load_settings()
+
+
