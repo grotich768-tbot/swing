@@ -1,0 +1,33 @@
+{
+  "BTCUSD": {
+    "total_pnl_usd": 1551186.5281820828,
+    "total_return": 155.11865281822384,
+    "final_balance": 1561186.5281822383,
+    "sharpe": 39.036314015523075,
+    "sortino": 0.0,
+    "calmar": 3889.425713539783,
+    "max_drawdown": 0.039882148125180955,
+    "max_drawdown_usd": 1230.1121754739434,
+    "win_rate": 0.6026318400555638,
+    "profit_factor": 2.101262203823854,
+    "n_flips": 8093,
+    "long_pct": 0.5476757453986209,
+    "short_pct": 0.45232425460137915,
+    "avg_lots": 0.4419533733682996,
+    "avg_win_usd": 60.91378384935109,
+    "avg_loss_usd": -44.01729110231368,
+    "expectancy_usd": 19.217515674816347,
+    "max_win_streak": 16,
+    "max_loss_streak": 9,
+    "n_trades": 8094,
+    "trade_win_rate": 0.8715097603162837,
+    "trade_sharpe": 46.36669442860407,
+    "trade_expectancy": 191.63851333464248,
+    "trade_avg_win": 229.38750049284835,
+    "trade_avg_loss": -64.40125148649624,
+    "symbol": "BTCUSD",
+    "date_from": "2024-01-01",
+    "date_to": "2026-05-08",
+    "n_bars": 80628
+  }
+}

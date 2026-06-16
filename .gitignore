@@ -1,8 +1,4 @@
 __pycache__/
 *.pyc
 .env
-data/raw/
-models/saved/
-logs/
-results/
 *.zip

@@ -1,0 +1,33 @@
+{
+  "GOLD": {
+    "total_pnl_usd": 352916.638576973,
+    "total_return": 35.29166385770099,
+    "final_balance": 362916.6385770099,
+    "sharpe": 11.128605192053293,
+    "sortino": 56.300411084688704,
+    "calmar": 3809.678092030868,
+    "max_drawdown": 0.00926368649113864,
+    "max_drawdown_usd": 946.1498046874767,
+    "win_rate": 0.5943748626675456,
+    "profit_factor": 2.073964643877441,
+    "n_flips": 13186,
+    "long_pct": 0.5249295859051957,
+    "short_pct": 0.4750704140948043,
+    "avg_lots": 0.49901938141586294,
+    "avg_win_usd": 11.452321939239468,
+    "avg_loss_usd": -8.141594569822304,
+    "expectancy_usd": 3.5045368643706403,
+    "max_win_streak": 21,
+    "max_loss_streak": 12,
+    "n_trades": 13187,
+    "trade_win_rate": 0.7687874421779025,
+    "trade_sharpe": 24.999430436043287,
+    "trade_expectancy": 26.762465957152727,
+    "trade_avg_win": 38.32968029635242,
+    "trade_avg_loss": -11.698806253672634,
+    "symbol": "GOLD",
+    "date_from": "2022-01-14",
+    "date_to": "2026-05-08",
+    "n_bars": 100122
+  }
+}
